@@ -1273,8 +1273,7 @@ button:focus {
 	.mu-title-area {
 		padding: 0;
 	}
-			
-
+		
 }
 
 
@@ -1303,10 +1302,7 @@ button:focus {
 
 	.mu-video-iframe-area iframe {
 		height: 250px;
-	}
-
-				
-	
+	}	
 }
 
 
@@ -1322,15 +1318,10 @@ button:focus {
 }
 
 
-
 @media (max-width: 320px){
 
 	.mu-video-iframe-area {
 		padding: 30% 5%;
 	}
-	
-	
-	
-	
 }
 
