@@ -144,9 +144,6 @@
 		$(this).prev().find(".fa").removeClass("fa-minus").addClass("fa-plus");
 		});
 
-
-
-	
 	
 })( jQuery );
 
