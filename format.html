@@ -1,0 +1,48 @@
+
+<section id="faq">
+	<div class="container">
+		 <div class="row">
+				<div class="col-md-12">
+					 <div class="faq-area">
+							<div class="title-area">
+								 <h2 class="title">FAQ</h2>
+								 <span class="title-dot"></span>
+							</div>
+							<div class="faq-content">
+								 <div class="panel-group" id="accordion">
+										<#if FAQQuestion.getSiblings()?has_content> <#list FAQQuestion.getSiblings() as cur_FAQQuestion>  
+										<#assign currentHREF = "#" + cur_FAQQuestion?counter>
+
+										<#if cur_FAQQuestion?counter == 1>
+										<#assign aria = 'true'>
+										<#assign minus = 'minus'>
+										<#assign collapse = '#collapseOne'>
+										<#else>
+										<#assign aria = 'false'>
+										<#assign minus = 'plus'>
+</#if>
+										
+										<div class="panel panel-default">
+											 <div class="panel-heading">
+													<h4 class="panel-title">
+														 <a data-toggle="collapse" data-parent="#accordion" href="${currentHREF}" aria-expanded="${aria}">
+														 <span class="fa fa-${minus}"></span> 
+															 ${cur_FAQQuestion.getData()}
+
+														 </a>
+													</h4>
+											 </div>
+											 <div id="${cur_FAQQuestion?counter}" class="panel-collapse collapse">
+													<div class="panel-body">
+													${cur_FAQQuestion.FAQAnswer.getData()} 
+													</div>
+											 </div>
+										</div>
+										</#list> </#if>
+								 </div>
+							</div>
+					 </div>
+				</div>
+		 </div>
+	</div>
+</section>
