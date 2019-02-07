@@ -16,13 +16,12 @@ ul {
 	margin: 0;
 }
 
-ul {
-	li {
+ul li {
 		list-style: disc;
 		font-size: 17px;
 		line-height: 1.59;
 	}
-}
+
 
 a { 
 	text-decoration: none;
