@@ -9,7 +9,8 @@
 					</div>
 							<div class="faq-content">
 								 <div class="panel-group" id="accordion">
-										<#if FAQQuestion.getSiblings()?has_content> <#list FAQQuestion.getSiblings() as cur_FAQQuestion>  
+										<#if FAQQuestion.getSiblings()?has_content> 
+										<#list FAQQuestion.getSiblings() as cur_FAQQuestion>  
 										<#assign currentHREF = "#" + cur_FAQQuestion?counter>
 
 										<#if cur_FAQQuestion?counter == 1>
