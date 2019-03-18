@@ -7,8 +7,9 @@
 						 <h2 class="title">FAQ</h2>
 						 <span class="title-dot"></span>
 					</div>
-							<div class="faq-content">
-								 <div class="panel-group" id="accordion">
+					
+					 <div class="faq-content">
+						 <div class="panel-group" id="accordion">
 										<#if FAQQuestion.getSiblings()?has_content> 
 										<#list FAQQuestion.getSiblings() as cur_FAQQuestion>  
 										<#assign currentHREF = "#" + cur_FAQQuestion?counter>
