@@ -10,18 +10,18 @@
 					
 					 <div class="faq-content">
 						 <div class="panel-group" id="accordion">
-										<#if FAQQuestion.getSiblings()?has_content> 
-										<#list FAQQuestion.getSiblings() as cur_FAQQuestion>  
-										<#assign currentHREF = "#" + cur_FAQQuestion?counter>
+							<#if FAQQuestion.getSiblings()?has_content> 
+							<#list FAQQuestion.getSiblings() as cur_FAQQuestion>  
+							<#assign currentHREF = "#" + cur_FAQQuestion?counter>
 
-										<#if cur_FAQQuestion?counter == 1>
-										<#assign aria = 'true'>
-										<#assign minus = 'minus'>
-										<#assign collapse = '#collapseOne'>
-										<#else>
-										<#assign aria = 'false'>
-										<#assign minus = 'plus'>
-										</#if>
+							<#if cur_FAQQuestion?counter == 1>
+							<#assign aria = 'true'>
+							<#assign minus = 'minus'>
+							<#assign collapse = '#collapseOne'>
+							<#else>
+							<#assign aria = 'false'>
+							<#assign minus = 'plus'>
+							</#if>
 										
 										<div class="panel panel-default">
 											 <div class="panel-heading">
