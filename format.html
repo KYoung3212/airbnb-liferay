@@ -100,7 +100,7 @@
                                     <div class="contact-right-single">
                                         <div class="icon"><i class="fa fa-envelope"></i></div>
                                         <p><strong>Email Address</strong></p>
-                                    <#if EmailAddress.getSiblings()?has_content> <#list EmailAddress.getSiblings() as cur_EmailAddress> <p>${cur_EmailAddress.getData()}</p> </#list> </#if>
+                                    	<#if EmailAddress.getSiblings()?has_content> <#list EmailAddress.getSiblings() as cur_EmailAddress> <p>${cur_EmailAddress.getData()}</p> </#list> </#if>
                                     </div>
 
                                     <div class="contact-right-single">
