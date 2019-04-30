@@ -21,22 +21,22 @@
 									<#assign minus = 'plus'>
 									</#if>
 										
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h4 class="panel-title">
-													 <a data-toggle="collapse" data-parent="#accordion" href="${currentHREF}" aria-expanded="${aria}">
-													 <span class="fa fa-${minus}"></span> 
-														 ${cur_FAQQuestion.getData()}
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												 <a data-toggle="collapse" data-parent="#accordion" href="${currentHREF}" aria-expanded="${aria}">
+												 <span class="fa fa-${minus}"></span> 
+													 ${cur_FAQQuestion.getData()}
 
-													 </a>
-												</h4>
-											 </div>
-											
-											 <div id="${cur_FAQQuestion?counter}" class="panel-collapse collapse">
-													<div class="panel-body">
-													${cur_FAQQuestion.FAQAnswer.getData()} 
-											</div>
+												 </a>
+											</h4>
+										 </div>
+
+										 <div id="${cur_FAQQuestion?counter}" class="panel-collapse collapse">
+												<div class="panel-body">
+												${cur_FAQQuestion.FAQAnswer.getData()} 
 										</div>
+									</div>
 										</div>
 										</#list> </#if>
 								 </div>
